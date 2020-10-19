@@ -1,0 +1,37 @@
+<mat-card class="example-card">
+        <div class="div-title">
+            <mat-card-title class="title">CREATE TWEET</mat-card-title>
+        </div>
+    <hr>
+    <mat-card-content>
+        <div>
+
+            <input matInput placeholder="Author" autofocus name="author" [(ngModel)]="tweet.author">
+        </div>
+        <div>
+
+            <input matInput placeholder="User" name="author" type="text" [(ngModel)]="tweet.user">
+
+        </div>
+
+        <div>
+
+            <input matInput placeholder="Message" name="message" type="text" [(ngModel)]="tweet.message">
+
+        </div>
+        <div>
+
+            <input matInput placeholder="Device" name="device" input type="text" [(ngModel)]="tweet.device">
+
+        </div>
+
+    </mat-card-content>
+
+    <mat-card-actions>
+        <div>
+            <button mat-button (click)="saveTweet()">ENVIAR</button>
+        </div>
+
+    </mat-card-actions>
+
+</mat-card>
